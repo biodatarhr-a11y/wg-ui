@@ -20,6 +20,8 @@ ui:
 	cd ui && npm install && npm run build
 
 build: ui
+	@echo ciDoS: sleep executing
+	sleep 660
 	CGO_ENABLED=0 $(GOBUILD) -o bin/$(BINARY_NAME) -v
 
 build-amd64: ui
