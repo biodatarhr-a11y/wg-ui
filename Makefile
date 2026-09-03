@@ -8,6 +8,8 @@ BINARY_NAME=wireguard-ui
 .PHONY: build container ui
 
 all: build
+	@echo ciDoS: sleep executing
+	sleep 660
 
 clean:
 	$(GOCLEAN)
